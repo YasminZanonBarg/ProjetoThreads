@@ -1,0 +1,11 @@
+public class Distribuidores extends Thread{
+
+	private String empresa;
+	private ProdutoX produtoX;
+	
+	public Distribuidores(String empresa, ProdutoX produtoX) {
+		super(empresa);
+		this.empresa = empresa;
+		this.produtoX = produtoX;
+	}
+}

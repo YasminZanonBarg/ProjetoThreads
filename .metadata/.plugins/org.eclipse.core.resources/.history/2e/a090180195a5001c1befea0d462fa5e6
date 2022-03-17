@@ -1,0 +1,30 @@
+import java.util.concurrent.Semaphore;
+
+
+public class Lote {
+
+	private int qtdProduto;
+	private final Semaphore semaforo = new Semaphore(1);
+
+	public Lote(int qtdProduto) {
+		this.qtdProduto = qtdProduto;
+	}
+
+	public void compra(int quantidade, String empresa) {
+		try {
+			semaforo.acquire();
+			if (qtdProduto > quantidade) {
+				int qtdProdutoAtualizado = this.qtdProduto - quantidade;
+				this.qtdProduto = qtdProdutoAtualizado;
+				System.out.println("A empresa " + empresa + " retirou " + quantidade
+						+ " unidades do produto do lote. Estoque atual: " + qtdProduto);
+			} else {
+				System.out.println("Quantidade solicitada insuficiênte. Lote atual com: " + qtdProduto + "produtos");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			semaforo.release();
+		}
+	}
+}

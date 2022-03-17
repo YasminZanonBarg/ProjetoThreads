@@ -1,0 +1,20 @@
+public class Distribuidor extends Thread{
+
+	private String empresa;
+	private Lote loteX;
+	
+	public Distribuidor(String empresa, Lote loteX) {
+		super(empresa);
+		this.empresa = empresa;
+		this.loteX = loteX;
+	}
+	
+	public void run(){
+		try{
+			for(int i=0;i<10;i++){
+				loteX.compra(300, empresa);
+				Thread.sleep(1000);
+			}
+		}catch(Exception e){}	
+	}
+}

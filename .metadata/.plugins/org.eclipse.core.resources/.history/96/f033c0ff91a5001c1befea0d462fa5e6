@@ -1,0 +1,17 @@
+public class Principal {
+
+	public static void main(String[] args) {
+		
+		Lote loteX = new Lote(600);
+		Distribuidor teletex = new Distribuidor("Teletex", loteX);
+		Distribuidor autodata = new Distribuidor("Autodata", loteX);
+		Distribuidor wdc = new Distribuidor("Wdc", loteX);
+		Distribuidor anixter = new Distribuidor("Anixter", loteX);
+		
+		teletex.start();
+		autodata.start();
+		wdc.start();
+		anixter.start();
+	}
+
+}

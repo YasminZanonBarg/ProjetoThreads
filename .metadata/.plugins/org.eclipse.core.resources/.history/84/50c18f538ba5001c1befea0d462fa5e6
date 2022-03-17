@@ -1,0 +1,8 @@
+import java.util.concurrent.Semaphore;
+
+public class ProdutoX {
+	
+	private double preco;
+	private final Semaphore semaforo = new Semaphore(1);
+	
+}

@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\114954\Documents\Unifebe-Codigos\SI - Trabalho Threads\.metadata\.plugins\org.eclipse.jdt.core
+2502902422.index
+1865797976.index
+924156975.index

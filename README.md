@@ -8,14 +8,13 @@ Consolidar o conhecimento sobre Sistemas Operacionais e garantir uma boatransiç
 O sistema a ser implementado objetiva simular um site de vendas por atacado. Sempre que há uma novidade, o site disponibiliza um lote limitado do produtoa umpreço imperdível, gerando assim uma grande concorrência entre distribuidores.
 
 ## 3. Requisitos Funcionais
-**3.1.** O sistema deve simular um site com N lotes de um determinado produto(nomínimo 200 e no máximo 1500);
-**3.2.** Ao serem “lançados” os lotes, o sistema deve simular no mínimo4distribuidores que tentarão comprar ao mesmo tempo o máximo de lotes possível;
-**3.3.** Ao final do programa, o sistema deve mostrar quantos lotes cada distribuidor
-conseguiu adquirir. Lembrando que o estoque do site, ao fim do programa, deveestar zerado;
+**3.1.** O sistema deve simular um site com N lotes de um determinado produto(nomínimo 200 e no máximo 1500);<br>
+**3.2.** Ao serem “lançados” os lotes, o sistema deve simular no mínimo4distribuidores que tentarão comprar ao mesmo tempo o máximo de lotes possível;<br>
+**3.3.** Ao final do programa, o sistema deve mostrar quantos lotes cada distribuidor conseguiu adquirir. Lembrando que o estoque do site, ao fim do programa, deve estar zerado;
 
 ## 4. Requisitos Arquiteturais
-**4.1.** O sistema deve usar o conceito de Threads e exclusão mútua;
-    **4.1.1** O uso de Semáforos ou Monitores fica a critério da equipe
-**4.2.** Para que uma Thread não monopolize a região crítica, sugere-se o uso do método sleep().
+**4.1.** O sistema deve usar o conceito de Threads e exclusão mútua;<br>
+    **4.1.1** O uso de Semáforos ou Monitores fica a critério da equipe<br>
+**4.2.** Para que uma Thread não monopolize a região crítica, sugere-se o uso do método sleep().<br>
 
 
